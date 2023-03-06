@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Research Project Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/33f2c5cfaa.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+    </style>
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul>
+               <li><a href="#header">HOME</a></li>
+               <li><div class="dropdown">
+                <button class="dropbtn">RESULTS 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#results">ALL</a>
+                  <a href="global.html">GLOBAL</a>
+                  <a href="cocco.html">COCCOLITHOPHORES</a>
+                  <a href="pico.html">PICOPLANKTON</a>
+                </div></li>
+               <li><a href="#about">ABOUT</a></li> 
+               <li><a href="#contact">CONTACT</a></li> 
+            </ul>
+        </nav>
+        <div class="header-text">
+            <center><p>THE EFFECT OF GLOBAL WARMING ON PLANKTON AND CARBON CYCLING IN THE WORLD'S OCEANS</p></center>
+            <div class="row">
+                <div class="col-1">
+                    <h1>The drastic increases in oceanic temperatures over short periods of time due to global warming has lasting effects on the structure and biology of oceanic environments and organisms. Specifically, oceanic plankton communities are biologically affected by the increase in temperature due to the plankton’s metabolic rates being temperature dependent, as well as being affected by the indirect changes to the physical environment. Plankton communities are found in varying locations in the ocean, which primarily stem from variability in temperature, water stratification, availability of nutrients, and wind. My goal with this project is to analyze how a realistic increase in temperature in the next 100 years as a result of global warming will affect plankton species and their contribution to carbon cycling within the ocean. These creatures play an important role in carbon cycling because the oceanic biological pump is driven by plankton. Therefore, future oceanic carbon intake is directly correlated with the number of plankton and climate change. In this data analysis project, I utilize the outputs from the Darwin Model, a  global-scale, ecosystem mathematical model developed by researchers at MIT that allows us to quantify the impacts of thermal scaling across worlds oceans. The model captures cycling of various nutrients (C, N, P, Si, and Fe) and 31 plankton communities. The parameters that influence plankton growth, grazing and sinking in the model are related to size which is limited by nutrients and light and morality which comes from grazing and a mortality term. The specific model I utilize, called the Kremmer model, models a realistic increase of oceanic temperatures over the next 100 years, exhibiting a higher increase near the equator and lower near the poles. My research builds on research that explores the effects of climate change on planktonic food webs mediated by temperature effects on metabolism. I create visualizations of the Darwin model’s outputs to explore patterns and effects on the rising temperatures, specifically looking at competition, nutrients availability and short and long term effects of the results. </h1>
+                </div>
+                <div class="col-2"> 
+                    <center>
+                        <div class="video-mask">
+                            <video width="500" height="500" autoplay muted controls loop>
+                                <source src="images/planktoncover.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------results----------- -->
+<div id="results">
+    <div class="container"> 
+        <center><h1 class="subtitle">RESULTS</h1></center>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/plankton.png">
+                <div class="centered">GLOBAL<br>PLANKTON</div>
+                <div class="layer">
+                    <p><br><br><br><br><br><br>Identified and predicted wine quality given chemical predictors using ML models such as LDA, Single Decision Trees, Random Forest, Boosted Trees</p>
+                    <a href="global.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/coccocoverpic.png">
+                <div class="centered">COCCOLITHOPHORES</div>
+                <div class="layer">
+                    <p><br><br><br><br><br><br>Provided actionable information and created intuitive visualizations about current trends in the entertainment industry using SQL and R </p>
+                    <a href="cocco.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/picoplanktoncover.png">
+                <div class="centered">PICOPLANKTON</div>
+                <div class="layer">
+                    <p><br><br><br><br><br><br>Coded HTML website from scratch to display portfolio</p>
+                    <a href="pico.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Back to top</a>
+    </div>
+</div>
+<!-----------about----------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/pic.jpeg">
+            </div>
+            <div class="about-col-2"> 
+                <h1 class="subtitle">ABOUT ME</h1>
+                <p class="body">My name is Safiya Alavi and I am a third year Statistics and Data Science major at the University of California, Santa Barbara. Currently, I have been working towards my degree and honing my technical skills by studying and excelling in various Statistics and Data Science courses, as well as participating in the Data Science/Computer Science Capstone at UCSB and conducting independent research. In addition, I am president of a South Asian philanthropic organization called Dhadkan, which organizes large fundraisers for various charities each year. In my free time, I love spending time with my friends and family, traveling, and taking advantage of the beautiful surroundings of my school and getting outside whether it's going on walks or runs by the beach.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                </div>
+                
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data Science</span><br>R-Studio (tidyverse, dplyr, ggplot)<br>Python (pandas, numpy, matplotlib, pyspark)<br>SQL<br>SAS<br>Matlab</li>
+                        <li><span>Web Development</span><br>HTML<br>CSS</li>
+
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>BS in Statistics and Data Science from UCSB </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Data Science Capstone</span><br>Created knowledge graph using NLP and text mining algorithms</li>
+                        <li><span>Independent Researcher</span><br>Produced visual outputs of simulated data by local-scale and global-scale climate change models</li>
+                        <li><span>Meta Data Challenge</span><br>Selected as a finalist for a competitive five-month data science apprenticeship at Meta</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+
+    
+</script>
+
+<!-----------contact----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>safiyazalavi@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> (408)-786-8918</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/safiya.alavi.10/"><i class="fa-brands fa-facebook"></i></a> 
+                    <a href="https://www.linkedin.com/in/safiyaalavi/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/safiyaalavi02"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="resume.pdf" download class="btn btn2"> View/Download CV </a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required> <!--this will make a place for the user to input--> 
+                    <input type="email" name="Email" placeholder="Your Email" required>  <!--this will make a place for the user to input--> 
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>  <!--this will make a place for the user to input-->
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+</div>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyE3N3le-b6_lGVguKRgXG_o3qrnCA4VIOl64N_QlrW9yADDwOJl49kCD0nT9gHga7k/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>

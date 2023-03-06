@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+ /* specifying the body of the website (color, etc*/ 
+body{
+    background-image: linear-gradient(to right,#c4dcf4, #E7DFD8);
+    color: #000000;
+}
+
+ /* adding in my background image*/ 
+#header{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.container{
+    padding: 20px 20px;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul{
+    color: #000000;
+    position:center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight:bold;
+    outline: dotted;
+
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 90px;
+}
+
+nav ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    float: left;
+    
+}
+
+nav ul li a::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #2676c5;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+
+nav ul li a:hover::after, .dropdown:hover .dropbtn{
+    width: 100%;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: black;
+    background-color: inherit;
+    margin: 0;
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #c4dcf4;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #c4dcf4;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.header-text p{
+    font-size: 40px;
+    color: #0e3c6a;
+    padding: 50px 100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight:bold;
+}
+
+
+.header-text h2{
+    font-size: 25px;
+    color: #0e3c6a;
+    padding: 10px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight:bolder;
+}
+
+.row{
+    display: flex;
+    color: #000000;
+    padding: 50px 100px;
+
+}
+
+.col-1{
+    flex-basis: 40%;
+}
+
+.col-1 h1{
+    font-size: 12px;
+}
+.col-2{
+    flex-basis: 60%;
+}
+
+img{
+    width: 90%;
+    height: 90%;
+    border-radius: 15px;
+    overflow: hidden; 
+    position: relative;
+}
+
+.col-1-{
+    flex-basis: 60%;
+
+}
+
+.col-2-{
+    flex-basis: 40%;
+}
+
+.col-2- h1{
+    font-size: 12px;
+}
+
+
+.btn{
+    display: block;  /*displays as a block*/
+    margin: 50px auto; /*centers content*/
+    width: fit-content;
+    padding: 14px 50px;
+    border-radius: 6px; /*adds the circulur affect*/
+    text-decoration: none; /*removes underline*/
+    color: #000000;
+    transition: btn 0.5s;
+    background: #4c89c6;
+
+}
+
+.btn:hover{
+    background: #1d5d9d;
+}
+
