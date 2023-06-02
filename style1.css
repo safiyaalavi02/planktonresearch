@@ -143,8 +143,15 @@ nav ul li a:hover::after, .dropdown:hover .dropbtn{
 }
 
 .col-1 h1{
-    font-size: 14px;
+    font-size: 16px;
     margin-left: 150px;
+}
+
+.col-1 span{
+    font-size: 20px;
+    color: #1070d1;
+    font-style: italic;
+
 }
 
 .col-2{
@@ -154,7 +161,6 @@ nav ul li a:hover::after, .dropdown:hover .dropbtn{
 
 .col-1-{
     flex-basis: 60%;
-    padding: 0 20px;
 
 }
 
@@ -163,13 +169,20 @@ nav ul li a:hover::after, .dropdown:hover .dropbtn{
 }
 
 .col-2- h1{
-    font-size: 14px;
+    font-size: 16px;
+    margin-right: 70px;
 
 }
 
+span{
+    font-size: 20px;
+    color: #1070d1;
+    font-style: italic;
+
+}
 img{
-    width: 75%;
-    height: 75%;
+    width: 80%;
+    height: 80%;
     border-radius: 15px;
     overflow: hidden; 
     position: relative;
